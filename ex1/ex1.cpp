@@ -28,8 +28,10 @@ char* my_strcpy(char *dst, const char* src)
     }
 
     dst = dstArr;
+    
+    dstArr = 0;
 
-    delete dstArr;
+    delete[] dstArr;
 
     return dst;
 }
